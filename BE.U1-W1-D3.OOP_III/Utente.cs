@@ -116,7 +116,7 @@ namespace BE.U1_W1_D3.OOP_III
             if (userName == UserName && password == Password && confermaPassword == Password)
             {
                 _login = true;
-                Console.WriteLine("Dati inseriti con successo");
+                Console.WriteLine("DATI INSERITI CON SUCCESSO");
                 dataAccesso = DateTime.Now;
                 listaAccessi.Add(dataAccesso);
                 Menu();
@@ -162,8 +162,7 @@ namespace BE.U1_W1_D3.OOP_III
             if (_login)
             {
                 Console.WriteLine($"HAI EFFETTUATO L'ACCESSO IL: {dataAccesso}");
-                Console.WriteLine("");
-                Console.WriteLine("");
+                Console.WriteLine("");                
 
                 Menu();
 
@@ -171,8 +170,7 @@ namespace BE.U1_W1_D3.OOP_III
             {
                 Console.WriteLine("ATTENZIONE!! NON TI SEI ANCORA LOGGATO.");
                 Console.WriteLine("");
-                Console.WriteLine("");
-
+                
                 Menu();
             }
         }
@@ -189,16 +187,11 @@ namespace BE.U1_W1_D3.OOP_III
                 {
                     Console.WriteLine("ECCO LA TUA LISTA ACCESSI:");
                     Console.WriteLine(item);
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-
-
+                    Console.WriteLine("");                  
 
                 }
                 Menu();
             }
-
-
         }
 
 
