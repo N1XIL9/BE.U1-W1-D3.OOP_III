@@ -183,15 +183,16 @@ namespace BE.U1_W1_D3.OOP_III
             }
             else
             {
+                    Console.WriteLine("ECCO LA TUA LISTA ACCESSI:");
                 foreach (DateTime item in listaAccessi)
                 {
-                    Console.WriteLine("ECCO LA TUA LISTA ACCESSI:");
-                    Console.WriteLine(item);
                     Console.WriteLine("");                  
-
+                    Console.WriteLine(item);
+                    Console.WriteLine("");
+                    
                 }
-                Menu();
             }
+                Menu();
         }
 
 
@@ -201,10 +202,6 @@ namespace BE.U1_W1_D3.OOP_III
             Thread.Sleep(2000);
 
             Environment.Exit(0);
-        }
-
-        
-    }
-
-    
+        }       
+    }    
 }
